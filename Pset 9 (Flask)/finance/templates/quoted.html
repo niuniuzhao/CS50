@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>
+        <!-- jinja syntax for "placeholders" for values -->
+        A share of {{ stock_name }} costs {{ value | usd }}.
+    </p>
+{% endblock %}
